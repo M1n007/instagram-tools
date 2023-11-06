@@ -159,7 +159,6 @@ const veryfEmail = (headers, url) => new Promise((resolve, reject) => {
         })
 
         const imageName = listPath[Math.floor(Math.random() * listPath.length)];
-
         const bioFile = await fs.readFileSync(bioLocation, 'utf-8');
         const bioArray = bioFile.toString().split("\n");
         const bioFinal = bioArray[Math.floor(Math.random() * bioArray.length)];
